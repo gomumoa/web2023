@@ -10,65 +10,70 @@
             margin: 0;
             padding: 0;
         }
-        body {
-            background-color: #111;
-        }
         #wrap {
-            width: 1200px;
-            height: 1080px;
-            margin: 0 auto;
+            width: 100%;
         }
         #header {
-            width: 1200px;
+            width: 100%;
             height: 100px;
-            background-color: #222;
+            background-color: #EEEBE9;
         }
         #nav {
-            width: 1200px;
+            width: 100%;
             height: 100px;
-            background-color: #333;
-        }
-        #side {
-            width: 300px;
-            height: 780px;
-            background-color: #444;
-            float: left;
-        }
-        #aside {
-            width: 900px;
-            height: 260px;
-            background-color: #555;
-            float: left;
+            background-color: #B9AAA5;
         }
         #section {
-            width: 450px;
-            height: 520px;
-            background-color: #666;
-            float: left;
+            width: 100%;
+            height: 780px;
+            background-color: #886F65;
         }
-        #section2 {
-            width: 450px;
-            height: 520px;
-            background-color: #777;
-            float: left;
+        #article1 {
+            width: 100%;
+            height: 100px;
+            background-color: #74574A;
+        }
+        #article2 {
+            width: 100%;
+            height: 200px;
+            background-color: #684D43;
+        }
+        #article3 {
+            width: 50%;
+            height: 480px;
+            background-color: #4A352F;
         }
         #footer {
-            width: 1200px;
+            width: 100%;
             height: 100px;
-            background-color: #888;
-            clear: both;
+            background-color: #4E342E;
+        }
+        .container {
+            width: 1200px;
+            height: inherit;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
     <div id="wrap">
-        <div id="header"></div>
-        <div id="nav"></div>
-        <div id="side"></div>
-        <div id="aside"></div>
-        <div id="section"></div>
-        <div id="section2"></div>
-        <div id="footer"></div>
+        <div id="header">
+            <div class="container"></div>
+        </div>
+        <div id="nav">
+            <div class="container"></div>
+        </div>
+        <div id="section">
+            <div class="container">
+                <div id="article1"></div>
+                <div id="article2"></div>
+                <div id="article3"></div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container"></div>
+        </div>
     </div>
 </body>
 </html>
